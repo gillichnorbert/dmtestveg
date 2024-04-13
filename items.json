@@ -1,0 +1,32 @@
+[{
+    "name": "Coca-Cola",
+    "amount": "0,5 l",
+    "price": 1290,
+    "category": "Soda"
+},
+{
+    "name": "Bombay",
+    "amount": "0,04 l",
+    "price": 1390,
+    "category": "Shot"  
+},{
+    "name": "Jack Daniel's",
+    "amount": "0,04 l",
+    "price": 1390,
+    "category": "Shot"
+},{
+    "name": "Jack & Coke",
+    "amount": "0,3 l",
+    "price": 3390,
+    "category": "Longdrink"
+},{
+    "name": "Bacardi & Coke",
+    "amount": "0,3 l",
+    "price": 3390,
+    "category": "Longdrink"
+},{
+    "name": "Jana Mentes",
+    "amount": "0,5 l",
+    "price": 990,
+    "category": "Water"
+}]

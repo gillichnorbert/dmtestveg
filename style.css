@@ -1,0 +1,265 @@
+/* Közös alapértelmezett stílusok */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+
+
+.container {
+    width: 100%;
+    max-width: 1200px; /* Korlátozzuk a konténer maximális szélességét */
+    margin: 0 auto; /* Középre igazítás */
+    padding: 0 15px; /* Belső térköz a tartalom körül */
+}
+
+/* Fejléc stílusok */
+header {
+    background-color: black;
+    padding: 10px 0;
+    color: yellow;
+}
+
+
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: yellow;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+}
+
+/* Kategória szűrő gombok stílusok */
+.categoryFilter {
+    margin-bottom: 10px;
+}
+
+.nav-link {
+    color: #666;
+}
+
+
+
+/* Termék kártyák és tartalmuk stílusok */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* A tartalmat balra igazítjuk a sorokban */
+}
+
+.card-item {
+    min-width: 11rem;
+    max-width: 11rem;
+    min-height: 100px;
+    max-height: 100px;
+    padding: 0;
+    box-sizing: border-box; /* A padding ne növelje a szélességet */
+}
+.card-body {
+    padding: 10px;
+}
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flexbox;
+    min-width: 11rem;
+    max-width: 11rem;
+    min-height: 100px;
+    max-height: 100px;
+}
+
+.Beer {
+    background-color: lightgreen;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flexbox;
+    min-width: 11rem;
+    max-width: 11rem;
+    min-height: 100px;
+    max-height: 100px;
+}
+
+.Energydrink {
+    background-color: blue;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flexbox;
+    min-width: 11rem;
+    max-width: 11rem;
+    min-height: 100px;
+    max-height: 100px;
+}
+
+.Water {
+    background-color: aqua;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flexbox;
+    min-width: 11rem;
+    max-width: 11rem;
+    min-height: 100px;
+    max-height: 100px;
+}
+
+.Shot {
+    
+        background-color:blueviolet;
+        color: white;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        display: flexbox;
+        min-width: 11rem;
+        max-width: 11rem;
+        min-height: 100px;
+        max-height: 100px;
+    
+}
+
+.Spritz {
+    background-color: rosybrown;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flexbox;
+    min-width: 11rem;
+    max-width: 11rem;
+    min-height: 100px;
+    max-height: 100px;
+}
+
+.Champagne {
+    background-color: gold;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flexbox;
+    min-width: 11rem;
+    max-width: 11rem;
+    min-height: 100px;
+    max-height: 100px;
+}
+
+.Longdrink {
+    background-color:limegreen;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flexbox;
+    min-width: 11rem;
+    max-width: 11rem;
+    min-height: 100px;
+    max-height: 100px;
+}
+
+.Cocktail {
+    background-color: orange;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flexbox;
+    min-width: 11rem;
+    max-width: 11rem;
+    min-height: 100px;
+    max-height: 100px;
+}
+
+.Soda {
+    background-color: red;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flexbox;
+    min-width: 11rem;
+    max-width: 11rem;
+    min-height: 100px;
+    max-height: 100px;
+}
+
+
+.card-title {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.card-subtitle {
+    font-size: 1em;
+    color: #666;
+}
+
+.card-text {
+    font-size: 1em;
+}
+
+
+
+
+/* Fixált összegzés stílusok */
+.fixed-summary {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 25%;
+    max-width: 300px; /* Korlátozzuk a fix szélességet nagyobb képernyőkön */
+    max-height: 80%;
+    background-color: #fff; /* Háttérszín */
+    border: 1px solid #ccc; /* Keret */
+    border-radius: 5px; /* Kerekített sarkok */
+    padding: 10px;
+    box-sizing: border-box; /* A padding ne növelje a szélességet */
+    z-index: 999; /* Biztosítja, hogy a fixált elem a lap többi tartalma fölé kerüljön */
+    overflow-y: scroll;
+    margin-bottom: 30px;
+
+}
+
+.totalItems {
+    margin-bottom: 15px;
+}
+
+.table th,
+.table td {
+    font-size: 1rem;
+    padding: 8px;
+}
+
+.table th {
+    font-weight: bold;
+}
+
+.totalText {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    position:absolute;
+
+}
+
+.trashbin {
+    justify-content: center;
+}
+
+#total {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    bottom: 10px; /* A felső távolság az összegző doboz tetejétől */
+    right: 10px; /* A jobb távolság az összegző doboz jobb szélétől */
+
+}
+
+
+#totalAmount {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 25%;
+    max-width: 300px; /* Korlátozzuk a fix szélességet nagyobb képernyőkön */
+    height: 40px;
+    max-height: 80%;
+    background-color: #fff; /* Háttérszín */
+    border: 1px solid #ccc; /* Keret */
+    border-radius: 5px; /* Kerekített sarkok */
+    padding-left: 5px;
+    box-sizing: border-box; /* A padding ne növelje a szélességet */
+    z-index: 999;
+}

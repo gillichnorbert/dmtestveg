@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DrinkMasters</title>
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  <script src="bootstrap/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="cashout.css">
+   
+</head>
+<body>
+<header>  
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">DrinkMasters</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="adminlogin.html" id="adminButton">Admin felület</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+</header>
+
+<div class="container mt-4">
+  <div class="row">
+
+        <button class="btn btn-primary mx-2 mb-4" id="backButton" onclick="backToDrinks()">Vissza</button>
+<div class="summary">
+  <button id="clearListBtn" class="btn btn-danger">Lista törlése</button>
+  <div class="totalItems">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Tétel neve</th>
+          <th>Db</th>
+          <th>Ár</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="summeryBody"></tbody>
+    </table>
+  </div>
+  <div id="totalAmount">
+    <div class="total">
+      <p class="totalText">Végösszeg: <span id="total"> Ft</span></p>
+    </div>
+  </div>
+</div>
+
+
+<script>
+
+    </script>
+<script src="items.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

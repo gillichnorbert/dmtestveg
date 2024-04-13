@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ital hozzáadása</title>
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  <script src="bootstrap/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">DrinkMasters</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="admin.html">Admin felület</a>
+          </li>
+          <!-- További navigációs elemeket itt lehet megadni -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container mt-5">
+    <h1 class="mb-4">Ital hozzáadása</h1>
+
+    <form id="addItemForm">
+      <div class="mb-3">
+        <label for="itemName" class="form-label">Név:</label>
+        <input type="text" class="form-control" id="itemName" name="itemName">
+      </div>
+      <div class="mb-3">
+        <label for="itemAmount" class="form-label">Mennyiség:</label>
+        <input type="text" class="form-control" id="itemAmount" name="itemAmount">
+      </div>
+      <div class="mb-3">
+        <label for="itemPrice" class="form-label">Ár:</label>
+        <input type="text" class="form-control" id="itemPrice" name="itemPrice">
+      </div>
+      <div class="mb-3">
+        <label for="itemCategory" class="form-label">Típus:</label>
+        <select class="form-control" id="itemCategory" name="itemCategory">
+          <option value="Soda">Üdítő</option>
+          <option value="Cocktail">Koktél</option>
+          <option value="Longdrink">Longdrink</option>
+          <option value="Beer">Sör</option>
+          <option value="Cups">Poharak</option>
+          <option value="Energydrink">Energiaital</option>
+          <option value="Shot">Shot</option>
+          <option value="Spritz">Fröccs</option>
+          <option value="Wine">Bor</option>
+          <option value="Champagne">Pezsgő</option>
+          <option value="Other">Egyéb</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Hozzáadás</button>
+    </form>
+  </div>
+
+  <script src="additem.js"></script>
+  <script src="items.js"></script>
+  <script src="app.js"></script>
+  <link rel="stylesheet" href="style.css">
+</body>
+</html>
