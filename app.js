@@ -7,22 +7,8 @@ const total = document.getElementById('total');
 const clearListBtn = document.getElementById('clearListBtn');
 const backButton = document.getElementById('backButton');
 
-function openCashoutPage() {
-    window.open('cashout.html', "_self");
-    updateListAndTotal(); // Lista és végösszeg frissítése
-}
 
-function backToDrinks() {
-    updateListAndTotal(); // Lista és végösszeg frissítése
-    saveItemListToSessionStorage(); // Mentjük az üres itemList-et a sessionStorage-be
-    window.open('index.html', "_self");
-}
 
-// Vissza gomb eseménykezelője
-backButton.addEventListener('click', function() {
-    displayItems(items); // Minden termék megjelenítése
-    
-});
 
 
 
@@ -85,7 +71,7 @@ function updateListAndTotal() {
             deleteItem(index);
         });
     });
-    loadCSS('style.css');
+
 }
 
 // Tétel törlése az index alapján
@@ -213,3 +199,21 @@ categories.forEach(category => {
       updateListAndTotal();
       saveItemListToSessionStorage(); // Mentjük az itemList-et a sessionStorage-be
   }
+
+
+  function openCashoutPage() {
+    window.open('cashout.html', "_self");
+    updateListAndTotal(); // Lista és végösszeg frissítése
+}
+
+function backToDrinks() {
+    updateListAndTotal(); // Lista és végösszeg frissítése
+    
+    window.open('index.html', "_self");
+}
+
+// Vissza gomb eseménykezelője
+backButton.addEventListener('click', function() {
+    displayItems(items); // Minden termék megjelenítése
+    
+});
